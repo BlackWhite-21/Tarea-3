@@ -2,19 +2,18 @@
 
 Este proyecto es una aplicación orientada a objetos escrita en Java que modela personas con diferentes profesiones y habilidades/poderes especiales utilizando patrones de diseño básicos como la polimorfismo e interfaces.
 
----
-
-## 🚀 Función del programa
+------------------------------------------------------------
+## Función del programa
+------------------------------------------------------------
 
 El sistema permite:
 1. Representar entidades base del tipo `Persona` con atributos comunes (nombre, edad) y comportamientos como cantar o asignar un poder especial.
 2. Extender el comportamiento de una `Persona` mediante **herencia** para especializarse en distintas profesiones (`Bombero`, `OIJ`, `Quiropractico`), gestionando sus jornadas de trabajo, descanso y cobro/dinero ganado.
 3. Asignar de forma dinámica comportamientos de ataque/poderes mediante la interfaz `IPower` y sus implementaciones concretas (patrón Strategy/Asociación).
 
----
-
-## 📦 Descripción de las Clases y Paquetes
-
+------------------------------------------------------------
+## Descripción de las Clases y Paquetes
+------------------------------------------------------------
 ### Paquete `personas`
 - **`Persona`**: Clase base que representa a un individuo. Contiene constructores sobrecargados, atributos protegidos/privados (`nombre`, `edad`), métodos generales (`cantar`) y la capacidad de poseer y ejecutar un poder mediante la interfaz `IPower`.
 
@@ -32,9 +31,9 @@ Todas estas clases heredan de `personas.Persona`:
 - **`PoderKPOW`**: Implementación de `IPower` que dispara un ataque de ráfaga (`KPOW KPOW...`).
 - **`PoderRayoLaser`**: Implementación de `IPower` que dispara un rayo láser (`--------------->`).
 
----
-
-## 📐 Diagrama de Clases (PlantUML)
+------------------------------------------------------------
+## Diagrama de Clases (PlantUML)
+------------------------------------------------------------
 
 @startuml
 package personas {

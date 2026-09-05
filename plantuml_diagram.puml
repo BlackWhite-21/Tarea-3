@@ -1,0 +1,94 @@
+@startuml
+package personas {
+    class Persona {
+        - edad: byte
+        # nombre: String
+        - power: IPower
+        + Persona(pEdad: byte, pNombre: String)
+        + Persona(pNombre: String, pEdad: byte)
+        + Persona(pNombre: String)
+        + Persona()
+        + getNombre(): String
+        + getedad(): int
+        + cantar(): void
+        + setPower(pPower: IPower): void
+        + atacar(): void
+    }
+}
+
+package poderes {
+    interface IPower {
+        + DispararPoder(): void
+    }
+
+    class PoderAtaqueEspiral implements IPower {
+        + PoderAtaqueEspiral()
+        + DispararPoder(): void
+    }
+
+    class PoderAtaqueZigZag implements IPower {
+        + PoderAtaqueZigZag()
+        + DispararPoder(): void
+    }
+
+    class PoderCirculosDeEnergia implements IPower {
+        + PoderCirculosDeEnergia()
+        + DispararPoder(): void
+    }
+
+    class PoderKPOW implements IPower {
+        + PoderKPOW()
+        + DispararPoder(): void
+    }
+
+    class PoderRayoLaser implements IPower {
+        + PoderRayoLaser()
+        + DispararPoder(): void
+    }
+}
+
+package profesiones {
+    class Bombero extends personas.Persona {
+        - en_servicio: boolean
+        - horas_trabajadas: int
+        - horas_descansadas: int
+        - dinero: int
+        - valor_hora: int
+        + Bombero(pNombre: String, pEdad: int, pValor_hora: int)
+        + trabajando(horas: int): void
+        + Descansando(horas: int): void
+        + DiaDePago(): void
+        + GetDinero(): int
+    }
+
+    class OIJ extends personas.Persona {
+        - libre: boolean
+        - horas_trabajadas: int
+        - horas_investigacion: int
+        - dinero: int
+        - valor_hora: int
+        + OIJ(pNombre: String, pEdad: int, pValor_hora: int)
+        + AsignarInvestigacion(horas: int): void
+        + InvestigarCaso(): void
+        + DiaDePago(): void
+        + GetHorasTrabajadas(): int
+        + GetDinero(): int
+    }
+
+    class Quiropractico extends personas.Persona {
+        - libre: boolean
+        - horas_trabajadas: int
+        - horas_consulta: int
+        - dinero: int
+        - precio_consulta: int
+        + Quiropractico(pNombre: String, pEdad: int, pprecio_consulta: int)
+        + AgendarCita(horas: int): void
+        + Consulta(): void
+        + GetDinero(): int
+    }
+}
+
+' Relación de asociación entre Persona e IPower
+personas.Persona "1" --> "0..1" poderes.IPower : power
+
+@enduml

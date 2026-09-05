@@ -1,6 +1,6 @@
-package src.profesiones;
+package profesiones;
 
-import src.personas.Persona;
+import personas.Persona;
 
 public class Quiropractico extends Persona {
     private boolean libre;

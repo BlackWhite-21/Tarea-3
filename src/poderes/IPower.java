@@ -1,4 +1,4 @@
-package src.poderes;
+package poderes;
 public interface IPower {
     public void DispararPoder();
 }

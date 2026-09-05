@@ -1,6 +1,6 @@
-package src.personas;
+package personas;
  
-import src.poderes.IPower;
+import poderes.IPower;
 
 public class Persona {
     private byte edad;

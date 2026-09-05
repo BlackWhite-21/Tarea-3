@@ -1,16 +1,16 @@
-package src.programa_mutante;
+package programa_mutante;
 
-import src.personas.Persona;
+import personas.Persona;
 
-import src.poderes.IPower;
-import src.poderes.PoderAtaqueEspiral;
-import src.poderes.PoderAtaqueZigZag;
-import src.poderes.PoderCirculosDeEnergia;
-import src.poderes.PoderKPOW;
+import poderes.IPower;
+import poderes.PoderAtaqueEspiral;
+import poderes.PoderAtaqueZigZag;
+import poderes.PoderCirculosDeEnergia;
+import poderes.PoderKPOW;
 
-import src.profesiones.Bombero;
-import src.profesiones.OIJ;
-import src.profesiones.Quiropractico;
+import profesiones.Bombero;
+import profesiones.OIJ;
+import profesiones.Quiropractico;
 
 public class Quickstart {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package src.poderes;
+package poderes;
 public class PoderAtaqueEspiral implements IPower{
     public PoderAtaqueEspiral(){
 

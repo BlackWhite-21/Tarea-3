@@ -1,4 +1,4 @@
-package src.poderes;
+package poderes;
 public class PoderCirculosDeEnergia implements IPower{
     public PoderCirculosDeEnergia(){
 

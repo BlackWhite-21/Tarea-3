@@ -1,6 +1,6 @@
-package src.profesiones;
+package profesiones;
 
-import src.personas.Persona;
+import personas.Persona;
 
 public class Bombero extends Persona {
     private boolean en_servicio;
